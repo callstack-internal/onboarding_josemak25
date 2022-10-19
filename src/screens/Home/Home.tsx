@@ -1,12 +1,12 @@
 import React, { useCallback } from "react";
 import {
-  View,
   FlatList,
   StatusBar,
   SafeAreaView,
   ListRenderItem,
 } from "react-native";
 
+import { Hr } from "../../component/Hr";
 import { Weather } from "../../component/Weather";
 import { makeUseStyles } from "../../helpers/makeUseStyles";
 import { RootTabScreenProps } from "../../../types/navigation";
@@ -25,7 +25,7 @@ export const HomeScreen: React.FC<RootTabScreenProps<"Home">> = ({
     [],
   );
 
-  const ItemSeparatorComponent = () => <View style={styles.separatorStyle} />;
+  const ItemSeparatorComponent = () => <Hr />;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -40,17 +40,12 @@ export const HomeScreen: React.FC<RootTabScreenProps<"Home">> = ({
   );
 };
 
-const useStyles = makeUseStyles(({ palette, edgeInsets, isDarkMode }) => ({
+const useStyles = makeUseStyles(({ palette, edgeInsets }) => ({
   container: {
     flex: 1,
     backgroundColor: palette.background,
   },
   contentContainerStyle: {
     paddingBottom: edgeInsets.bottom,
-  },
-  separatorStyle: {
-    borderWidth: 0.5,
-    opacity: isDarkMode ? 1 : 0.1,
-    backgroundColor: palette.hairlineColor,
   },
 }));
