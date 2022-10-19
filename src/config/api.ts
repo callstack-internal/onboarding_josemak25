@@ -1,5 +1,6 @@
 import { create } from "apisauce";
-import { BASE_URL } from "@env";
+
+const BASE_URL = "";
 
 export const api = create({
   baseURL: BASE_URL,

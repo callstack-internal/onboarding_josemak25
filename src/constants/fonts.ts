@@ -8,7 +8,15 @@ const size = {
   xxlg: 30,
 };
 
-const weight = {
+interface FontWeightType {
+  full: "900";
+  semi: "600";
+  bold: "bold";
+  normal: "normal";
+  thin: "400";
+}
+
+const weight: FontWeightType = {
   full: "900",
   semi: "600",
   bold: "bold",
