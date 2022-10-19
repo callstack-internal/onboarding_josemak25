@@ -12,6 +12,7 @@ type Palette = typeof colors["light"];
 
 type GetStylesPayload = {
   palette: Palette;
+  isDarkMode: boolean;
   fonts: typeof fonts;
   layout: typeof layout;
   colors: typeof colors;
@@ -27,15 +28,16 @@ export function makeUseStyles<
     const theme = useColorScheme();
     const edgeInsets = useSafeAreaInsets();
     const palette = colors[theme];
+    const isDarkMode = theme !== "light";
 
     const styles = useMemo(
       () =>
         StyleSheet.create(
-          getStyles({ palette, layout, colors, fonts, edgeInsets }),
+          getStyles({ isDarkMode, palette, layout, colors, fonts, edgeInsets }),
         ),
-      [theme],
+      [edgeInsets, isDarkMode, palette],
     );
 
-    return { styles, palette, layout, colors, edgeInsets, fonts };
+    return { isDarkMode, styles, palette, layout, colors, edgeInsets, fonts };
   };
 }
