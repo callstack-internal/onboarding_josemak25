@@ -26,6 +26,7 @@ export const Weather: React.FC<WeatherProps> = ({
   return (
     <TouchableOpacity
       onPress={onPress}
+      disabled={disabled}
       accessibilityRole="button"
       accessibilityLabel="weather card"
       style={[styles.cardContainer, style]}
