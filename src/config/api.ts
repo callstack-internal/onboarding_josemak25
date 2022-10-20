@@ -1,8 +1,8 @@
 import { create } from "apisauce";
 
-const BASE_URL = "";
+const BASE_URL = "https://api.openweathermap.org";
 
-export const api = create({
+export const network = create({
   baseURL: BASE_URL,
   headers: {
     Accept: "application/json",

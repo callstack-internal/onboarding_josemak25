@@ -1,17 +1,23 @@
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { RouteProp, useRoute } from "@react-navigation/native";
 
 import { Hr } from "../../component/Hr";
 import { Weather } from "../../component/Weather";
 import { makeUseStyles } from "../../helpers/makeUseStyles";
+import { RootStackParamList } from "../../../types/navigation";
 
 export const DetailScreen = () => {
   const { styles } = useStyles();
+  const { params } = useRoute<RouteProp<RootStackParamList, "Detail">>();
+
+  const { main, wind, clouds } = params.data;
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Weather
         disabled
+        data={params.data}
         accessibilityRole="none"
         accessibilityLabel="weather info"
       />
@@ -19,34 +25,35 @@ export const DetailScreen = () => {
 
       <View style={styles.detailsWrapper}>
         <Text style={styles.text}>Humidity</Text>
-        <Text style={styles.text}>37%</Text>
+        <Text style={styles.text}>{main.humidity}%</Text>
       </View>
       <Hr />
 
       <View style={styles.detailsWrapper}>
         <Text style={styles.text}>Pressure</Text>
-        <Text style={styles.text}>101pha</Text>
+        <Text style={styles.text}>{main.pressure} hPa</Text>
       </View>
       <Hr />
 
       <View style={styles.detailsWrapper}>
         <Text style={styles.text}>Wind speed</Text>
-        <Text style={styles.text}>3.36 mph</Text>
+        <Text style={styles.text}>{wind.speed} mph</Text>
       </View>
       <Hr />
 
       <View style={styles.detailsWrapper}>
         <Text style={styles.text}>Cloud cover</Text>
-        <Text style={styles.text}>0%</Text>
+        <Text style={styles.text}>{clouds.all}%</Text>
       </View>
       <Hr />
-    </SafeAreaView>
+    </View>
   );
 };
 
-const useStyles = makeUseStyles(({ fonts, layout, palette }) => ({
+const useStyles = makeUseStyles(({ fonts, layout, palette, edgeInsets }) => ({
   container: {
     flex: 1,
+    paddingBottom: edgeInsets.bottom,
   },
   detailsWrapper: {
     flexDirection: "row",
