@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components / Weather.tsx should render correctly 1`] = `
+<View
+  accessibilityLabel="weather card"
+  accessibilityRole="button"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 70,
+      "opacity": 1,
+      "paddingHorizontal": 12,
+    }
+  }
+  testID="weather_card_press"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Image
+      accessibilityIgnoresInvertColors={true}
+      resizeMode="contain"
+      source={
+        Object {
+          "uri": "https://openweathermap.org/img/wn/04d.png",
+        }
+      }
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "marginHorizontal": 12,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 16,
+              "fontWeight": "600",
+            },
+            Object {
+              "color": "#000",
+              "opacity": 0.5,
+            },
+          ]
+        }
+      >
+        Madrid
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 16,
+              "fontWeight": "600",
+            },
+            Object {
+              "color": "#000",
+              "opacity": 0.5,
+            },
+          ]
+        }
+      >
+        broken clouds
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+        },
+        Object {
+          "justifyContent": "flex-end",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#b4d7e3",
+          "borderRadius": 50,
+          "paddingHorizontal": 18,
+          "paddingVertical": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+      >
+        17.9
+         °F
+      </Text>
+    </View>
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontSize": 14,
+          },
+          Object {
+            "marginLeft": 12,
+            "opacity": 0.5,
+          },
+          Object {
+            "fontFamily": "FontAwesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`screens / Detail.tsx should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingBottom": 0,
+    }
+  }
+>
+  <View
+    accessibilityLabel="weather info"
+    accessibilityRole="none"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 70,
+        "opacity": 1,
+        "paddingHorizontal": 12,
+      }
+    }
+    testID="weather_card_press"
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        accessibilityIgnoresInvertColors={true}
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": "https://openweathermap.org/img/wn/04d.png",
+          }
+        }
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "marginHorizontal": 12,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 16,
+                "fontWeight": "600",
+              },
+              Object {
+                "color": "#000",
+                "opacity": 0.5,
+              },
+            ]
+          }
+        >
+          Madrid
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 16,
+                "fontWeight": "600",
+              },
+              Object {
+                "color": "#000",
+                "opacity": 0.5,
+              },
+            ]
+          }
+        >
+          broken clouds
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "row",
+          },
+          Object {
+            "justifyContent": "flex-end",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#b4d7e3",
+            "borderRadius": 50,
+            "paddingHorizontal": 18,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": 16,
+              "fontWeight": "600",
+            }
+          }
+        >
+          17.9
+           °F
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#b2b2b2",
+        "borderWidth": 0.5,
+        "opacity": 0.1,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 12,
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      Humidity
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      65
+      %
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#b2b2b2",
+        "borderWidth": 0.5,
+        "opacity": 0.1,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 12,
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      Pressure
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      1016
+       hPa
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#b2b2b2",
+        "borderWidth": 0.5,
+        "opacity": 0.1,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 12,
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      Wind speed
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      13.89
+       mph
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#b2b2b2",
+        "borderWidth": 0.5,
+        "opacity": 0.1,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 12,
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      Cloud cover
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 16,
+        }
+      }
+    >
+      75
+      %
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#b2b2b2",
+        "borderWidth": 0.5,
+        "opacity": 0.1,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`screens / Home.tsx should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "paddingBottom": 0,
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListEmptyComponent={[Function]}
+    contentContainerStyle={
+      Object {
+        "flex": 1,
+        "paddingBottom": 0,
+      }
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginHorizontal": 24,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "borderColor": "#000",
+              "borderRadius": 43,
+              "borderWidth": 2,
+              "height": 86,
+              "justifyContent": "center",
+              "width": 86,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontSize": 38,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 20,
+              "marginVertical": 12,
+              "textAlign": "center",
+            }
+          }
+        >
+          No Weather Data
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "textAlign": "center",
+            }
+          }
+        >
+          Pull-to-refresh
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

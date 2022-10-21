@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components / ErrorContainer.tsx should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 16,
+          "marginHorizontal": 24,
+          "marginVertical": 12,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    Check your internet
+  </Text>
+  <View
+    accessibilityLabel="retry fetching weather"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 30,
+        "opacity": 1,
+      }
+    }
+    testID="retry_network_call"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "manrope-bold",
+          },
+          undefined,
+        ]
+      }
+    >
+      Retry
+    </Text>
+  </View>
+</View>
+`;

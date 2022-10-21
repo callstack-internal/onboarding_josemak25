@@ -12,10 +12,7 @@ FontAwesome.loadFont(); // initialize font icons
 
 import { makeUseStyles } from "../../helpers/makeUseStyles";
 
-type WeatherProps = {
-  data: Weather;
-  onPress?: () => void;
-} & TouchableOpacityProps;
+type WeatherProps = { data: Weather } & TouchableOpacityProps;
 
 export const Weather: React.FC<WeatherProps> = ({
   data,
@@ -33,6 +30,7 @@ export const Weather: React.FC<WeatherProps> = ({
       onPress={onPress}
       disabled={disabled}
       accessibilityRole="button"
+      testID="weather_card_press"
       accessibilityLabel="weather card"
       style={[styles.cardContainer, style]}
       {...restProps}>
