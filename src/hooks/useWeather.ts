@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { network } from "../config/api";
 import { CITIES_LIST } from "../constants/cities";
 
-type WeatherQueryResponse = { cnt: number; list: Weather[] };
+export type WeatherQueryResponse = { cnt: number; list: Weather[] };
 
 const getQueryKey = () => [`Weathers`];
 
@@ -17,11 +17,12 @@ const getWeather = () => {
   return network.get<WeatherQueryResponse>(`/data/2.5/group?${QUERY_PARAMS}`);
 };
 
-export const useWeather = () =>
-  useQuery<
+export const useWeather = () => {
+  return useQuery<
     Awaited<ReturnType<typeof getWeather>>,
     BasicError,
     Weather[] | undefined
   >(getQueryKey(), getWeather, {
     select: ({ data }) => data?.list, // select just the array of weather
   });
+};

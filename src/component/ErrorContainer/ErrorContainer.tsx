@@ -31,6 +31,7 @@ export const ErrorContainer: FC<ErrorContainerProps> = ({
       <Text style={[styles.message, messageStyle]}>{message}</Text>
       <TouchableOpacity
         onPress={onRetry}
+        testID="retry_network_call"
         accessibilityRole="button"
         accessibilityLabel="retry fetching weather"
         style={[styles.retryButtonContainer, retryButtonContainerStyle]}>
