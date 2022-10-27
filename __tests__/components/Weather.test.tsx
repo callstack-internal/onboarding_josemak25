@@ -53,6 +53,5 @@ describe("components / Weather.tsx", () => {
     fireEvent.press(screen.getByTestId("weather_card_press"));
     expect(onNavigationPress).toHaveBeenCalled();
     expect(onNavigationPress).toHaveBeenCalledTimes(1);
-    expect(screen.toJSON()).toMatchSnapshot();
   });
 });

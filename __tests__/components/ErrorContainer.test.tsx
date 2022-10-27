@@ -15,6 +15,5 @@ describe("components / ErrorContainer.tsx", () => {
     fireEvent.press(screen.getByTestId("retry_network_call"));
     expect(onRetryPress).toHaveBeenCalled();
     expect(onRetryPress).toHaveBeenCalledTimes(1);
-    expect(screen.toJSON()).toMatchSnapshot();
   });
 });

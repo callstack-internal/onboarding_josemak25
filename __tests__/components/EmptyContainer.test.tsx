@@ -11,6 +11,5 @@ describe("components / EmptyContainer.tsx", () => {
 
     expect(screen.getByText(options.title)).toBeTruthy();
     expect(screen.getByText(options.subtitle)).toBeTruthy();
-    expect(screen.toJSON()).toMatchSnapshot();
   });
 });
