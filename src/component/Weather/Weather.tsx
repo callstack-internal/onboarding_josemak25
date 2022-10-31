@@ -8,8 +8,6 @@ import {
 } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
-FontAwesome.loadFont(); // initialize font icons
-
 import { makeUseStyles } from "../../helpers/makeUseStyles";
 
 type WeatherProps = {
